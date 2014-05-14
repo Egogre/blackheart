@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blackheart</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+	<%= csrf_meta_tags %>
+</head>
+<body>
+	<header class="grid-container" id="page_header" role="header">
+      <%= render 'layouts/header' %>
+    </header>
+
+    <nav class="grid-container" id="main-nav-container" role="navigation">
+      <%= render partial: 'layouts/navbar' %> 
+    </nav>
+
+	<%= yield %>
+
+</body>
+</html>
