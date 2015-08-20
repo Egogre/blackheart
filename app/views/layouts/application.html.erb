@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- <link rel="icon" type="image/png" href="assets/images/bhfavicon.ico"> -->
+  <%= favicon_link_tag %>
   <title>Blackheart</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	<%= csrf_meta_tags %>
+  <link rel="shortcut icon" href="./assets/images/favicon.ico">
 </head>
 <body>
+
 	<header class="grid-container" id="page_header" role="header">
       <%= render 'layouts/header' %>
     </header>
 
     <nav class="grid-container" id="main-nav-container" role="navigation">
-      <%= render partial: 'layouts/navbar' %> 
+      <%= render partial: 'layouts/navbar' %>
     </nav>
 
 	<%= yield %>
