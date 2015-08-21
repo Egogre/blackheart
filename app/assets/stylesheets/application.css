@@ -12,3 +12,16 @@
  *= require_self
  *= require_tree .
  */
+ header {
+    padding-top: 65px;
+}
+
+.item {
+  height: 400px;
+}
+
+.item  .img-responsive {
+    display: block;
+    width: auto;
+    max-height: 100%;
+}
