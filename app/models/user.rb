@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  # TEST this shiz
+  # TEST this error
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
