@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  # Update on PR?
+  # Update on error?
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
